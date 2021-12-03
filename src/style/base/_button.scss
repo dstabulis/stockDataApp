@@ -1,0 +1,19 @@
+:root {
+    --button-padding: 13px 22px;
+    --button-color: #{$white};
+    --button-background: #{$default-primary-base-color};
+    --button-border: #{$default-primary-base-color};
+    --button-hover-background: #{$default-primary-dark-color};
+    --button-hover-color: #{$white};
+    --button-hover-border: #{$default-primary-base-color};
+    --button-border-width: 1px;
+}
+
+.Button {
+    // Add mixin that solves button issue
+    // @include button;
+}
+
+button {
+    background-color: transparent;
+}

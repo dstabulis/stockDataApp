@@ -1,0 +1,31 @@
+ul,
+ol {
+    ul,
+    ol {
+        counter-reset: list;
+    }
+}
+
+li {
+    padding-left: 3.9rem;
+
+    @include mobile {
+        padding-left: 4.55rem;
+    }
+
+    &::before {
+        position: absolute;
+        left: 1em;
+        top: .07em;
+        padding-right: 1.1225em;
+
+        ol > & {
+            content: counter(list) '.';
+        }
+
+        &,
+        ul > & {
+            content: '\2022';
+        }
+    }
+}
